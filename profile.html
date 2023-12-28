@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Foodies</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Delivery Requests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">My Deliveries</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Upload Food</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Manage Foods</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">My Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary text-white" href="#">Sign Out</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container mt-4">
+        <h2 class="text-center">My Profile</h2>
+
+        <!-- Original and Update Profile Sections -->
+        <div class="row">
+            <!-- Original Profile Section (Left) -->
+            <div class="col-md-6">
+                <h3>Original Profile</h3>
+                <p><strong>First Name:</strong> John</p>
+                <p><strong>Last Name:</strong> Doe</p>
+                <p><strong>Gender:</strong> Male</p>
+                <p><strong>Birthday:</strong> January 1, 1990</p>
+                <p><strong>Phone:</strong> (Original Phone Number)</p>
+                <p><strong>Address:</strong> (Original Address)</p>
+                <p><strong>City:</strong> (Original City)</p>
+            </div>
+            
+            <!-- Update Profile Section (Right) -->
+            <div class="col-md-6">
+                <h3>Update Profile</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter new first name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name:</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter new last name">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender:</label>
+                        <select class="form-control" id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthday">Birthday:</label>
+                        <input type="text" class="form-control" id="birthday" name="birthday" value="January 1, 1990" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter new phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="text" class="form-control" id="address" name="address" placeholder="Enter new street and zip code">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" class="form-control" id="city" name="city" placeholder="Enter new city">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update Profile</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
